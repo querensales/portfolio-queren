@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+* {
+    font-family: "Crimson Pro", serif;
+    font-style: normal;
+
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #111; /* Fundo escuro */
+    padding: 20px;
+}
+
+/* Navbar usando Flexbox */
+nav {
+    display: flex;
+    justify-content: space-between; /* Empurra logo para um lado e menu para o outro */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Estilização do menu */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Links */
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #00ffcc; /* Cor neon ao passar o mouse */
+}
+
+/* Cursor piscando */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+h1::after {
+    content: "|"; /* Cursor */
+    font-weight: bold;
+    color: #00ffcc;
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink 0.8s infinite;
+}
+
+/* Animação de fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    font-size: 1.5rem; /* Ajuste o tamanho conforme desejar */
+    font-weight: 700; /* Deixa mais destacado */
+    letter-spacing: 2px; /* Dá um efeito mais tech */
+    color: white /* Cor neon para destacar */
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.name{
+    color:  #00ffcc;
+}
+
+/* Cursor piscando */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
