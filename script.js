@@ -7,9 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (index < text.length) {
             typingText.innerHTML += text.charAt(index);
             index++;
-            setTimeout(type, 150);
+            setTimeout(type, 60);
         } else {
-            // Quando terminar o efeito de digitação, mostrar os <p>
             setTimeout(() => {
                 document.getElementById("line1").style.opacity = "1";
                 document.getElementById("line1").style.transform = "translateY(0)";
