@@ -262,3 +262,42 @@ h2{
 .chilli-img{
     width: 105px;
 }
+
+.contact{
+   gap: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+.email-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.05rem;
+    color: #fff;
+    background:#009988;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.email-button:hover {
+    transform: scale(1.1);
+}
+
+.texto-contato{
+    font-size: 26px;
+}
