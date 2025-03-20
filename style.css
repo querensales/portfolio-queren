@@ -322,8 +322,8 @@ footer {
     }
 
     ul {
-        flex-direction: column;
-        gap: 10px; /* Espaçamento entre os itens */
+        margin: 0 auto;
+        gap: 10px;
     }
 
     ul li a {
