@@ -300,3 +300,14 @@ h2{
 .texto-contato{
     font-size: 26px;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #111; /* Mantém o fundo igual ao restante */
+    color: #fff;
+}
