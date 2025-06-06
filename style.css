@@ -12,7 +12,6 @@
 
 header {
     background-color: #111; /* Fundo escuro */
-    padding: 20px;
 }
 
 /* Navbar usando Flexbox */
@@ -26,7 +25,7 @@ nav {
 
 /* Logo */
 .logo {
-    width: 300px; /* Ajuste o tamanho conforme necessário */
+    width: 250px; /* Ajuste o tamanho conforme necessário */
 }
 
 /* Estilização do menu */
@@ -251,7 +250,7 @@ h2{
 .titulo-empresa{
     font-size: 60px;
     margin-top: 10px;
-    height: 8vh;
+    height: 15vh;
     font-size: 60px;
 }
 
@@ -301,3 +300,118 @@ h2{
 .texto-contato{
     font-size: 26px;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+    margin-top: 50px;
+}
+/* ...existing code... */
+
+/* Media query para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 200px; /* Ajuste o tamanho conforme necessário */
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px; /* Espaçamento entre os itens */
+    }
+
+    ul li a {
+        font-size: 18px;
+    }
+
+    .stack {
+        grid-template-columns: 1fr; /* 1 coluna */
+    }
+
+    .projects {
+        grid-template-columns: 1fr; /* 1 coluna */
+    }
+
+    .texto-sobremim {
+        font-size: 20px;
+        width: 90vw;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .titulo-empresa {
+        font-size: 40px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .email-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Media query para telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 150px; /* Ajuste o tamanho conforme necessário */
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+
+    .stack-card {
+        padding: 10px;
+    }
+
+    .project-card {
+        padding: 10px;
+    }
+
+    .texto-sobremim {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .titulo-empresa {
+        font-size: 30px;
+    }
+
+    .social-links img {
+        width: 30px;
+    }
+
+    .email-button {
+        font-size: 0.9rem;
+    }
+
+    .texto-contato {
+        font-size: 20px;
+    }
+}
+
+/* ...existing code... */
